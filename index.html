@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pojectful.site</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: #f5e6c1;
+      color: #2d2d2d;
+      padding: 20px;
+      background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #3a1f04;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+    .subtitle {
+      font-style: italic;
+      margin-bottom: 2rem;
+    }
+    .section {
+      margin-top: 2rem;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    .accordion {
+      background-color: #e6d3a3;
+      border: none;
+      cursor: pointer;
+      padding: 15px;
+      text-align: left;
+      outline: none;
+      font-size: 1rem;
+      width: 100%;
+      margin-top: 2rem;
+    }
+    .panel {
+      padding: 0 15px;
+      display: none;
+      background-color: #f9f1db;
+      overflow: hidden;
+      border: 1px solid #ccc;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <!-- MailerLite Universal -->
+  <script>
+      (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+      .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+      n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+      (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+      ml('account', '1538435');
+  </script>
+</head>
+<body>
+  <h1>Bienvenido a Pojectful.site</h1>
+  <p class="subtitle">Donde las ideas cobran vida</p>
+
+  <div class="section">
+    <h2>¿Qué es Pojectful?</h2>
+    <p>Pojectful es una plataforma dedicada a ayudarte a organizar y lanzar tus proyectos creativos y profesionales.</p>
+  </div>
+
+  <div class="section">
+    <h2 class="bold">Características principales</h2>
+    <button class="accordion">Organización de tareas</button>
+    <div class="panel">
+      <p>Planifica y gestiona tus actividades con herramientas intuitivas.</p>
+    </div>
+
+    <button class="accordion">Colaboración en equipo</button>
+    <div class="panel">
+      <p>Trabaja con otros de forma sencilla, con funciones diseñadas para equipos.</p>
+    </div>
+
+    <button class="accordion">Seguimiento de progreso</button>
+    <div class="panel">
+      <p>Mantente al tanto de cada avance y mide tus resultados.</p>
+    </div>
+  </div>
+
+  <script>
+    const accordions = document.querySelectorAll(".accordion");
+    accordions.forEach(btn => {
+      btn.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        panel.style.display = panel.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+</body>
+</html>
